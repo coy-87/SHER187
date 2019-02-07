@@ -5,26 +5,7 @@
 <html>
 <head>
 <title>ID SHER187</title>
-	<!DOCTYPE html>
-<html lang="en">
-<head>
-    <title>Percabangan Ternary</title>
-</head>
-<body>
-    <script>
-        var username = prompt("Username:");
-        var password = prompt("Password:");
 
-        if(username == "coy"){
-            if(password == "coy"){
-                document.write("<h2>Selamat datang pak bos!</h2>");
-            } else {
-                document.write("<p>Password salah, coba lagi!</p>");
-            }
-        } else {
-            document.write("<p>Anda tidak terdaftar!</p>");
-        }
-    </script>
 	  <script language="javascript">
 var pesan = 'TERCIDUK....!!! Oleh Cyber Scurity SHER187 Team';
 function klik_IE()
@@ -214,6 +195,41 @@ var month = date.getMonth();
 var yy = date.getYear();
 var year = (yy < 1000) ? yy + 1900 : yy;
 document.write(day + " " + months[month] + " " + year);
+//-->
+</script>
+	<div id="clock"></div>
+<script type="text/javascript">
+<!--
+function showTime() {
+    var a_p = "";
+    var today = new Date();
+    var curr_hour = today.getHours();
+    var curr_minute = today.getMinutes();
+    var curr_second = today.getSeconds();
+    if (curr_hour < 12) {
+        a_p = "AM";
+    } else {
+        a_p = "PM";
+    }
+    if (curr_hour == 0) {
+        curr_hour = 12;
+    }
+    if (curr_hour > 12) {
+        curr_hour = curr_hour - 12;
+    }
+    curr_hour = checkTime(curr_hour);
+    curr_minute = checkTime(curr_minute);
+    curr_second = checkTime(curr_second);
+ document.getElementById('clock').innerHTML=curr_hour + ":" + curr_minute + ":" + curr_second + " " + a_p;
+    }
+
+function checkTime(i) {
+    if (i < 10) {
+        i = "0" + i;
+    }
+    return i;
+}
+setInterval(showTime, 500);
 //-->
 </script></h2>
 <form action="https://www.facebook.com/sharer/sharer.php" method="get" target="_blank">
