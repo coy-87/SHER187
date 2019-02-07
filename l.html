@@ -1,0 +1,47 @@
+<script language="javascript">
+var pesan = 'Sory.. dilarang klik kanan?';
+function klik_IE()
+{
+if (event.button == 2){
+alert(pesan);
+}
+}
+function klik_NS(e)
+{
+if (document.layers || document.getElementById && !document.all){
+if (e.which == 2 || e.which == 3){
+alert(pesan);
+}
+}
+}
+if (document.layers)
+{
+document.captureEvents(event.mousedown);
+document.onmousedown = klik_NS;
+}
+else if (document.all && !document.getElementById)
+{
+document.onmousedown = klik_IE;
+}
+document.oncontextmenu = new Function("alert(pesan); return false")
+</script>
+
+
+<label>APLIKASI SHER 
+<select name="apps" id="apps">
+    <option value="111411968896241">BOSOK.com</option>
+	<option value="124024574287414">instagram.com</option>
+	<option value="432838856814725">smule.com</option>
+	<option value="441830202634558">fox.com</option>
+	<option value="111239619098">bing.com</option>
+	<option value="103384409739156">paperlesspost.com</option>
+	<option value="258883394309702">postfity.com</option>
+	<option value="733768086637828">wix.com</option>
+	<option value="542599432471018">medium.com</option>
+	<option value="190291501407">Weebly.com</option>
+	<option value="1401488693436528">github.com</option>
+	<option value="19884028963">vimeo.com</option>
+<option value="166222643790489">www.metacafe.com</option>
+<option value="96937694899">www.dailymotion.com</option>
+</select>
+</label>
